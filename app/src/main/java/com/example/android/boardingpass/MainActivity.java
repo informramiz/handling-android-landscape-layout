@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private void displayBoardingPassInfo(BoardingPassInfo info) {
 
         mBinding.textViewPassengerName.setText(info.passengerName);
-        // TODO (7) Use the flightInfor attribute in mBinding below to get the appropiate text Views
+        // COMPLETE (7) Use the flightInfor attribute in mBinding below to get the appropiate text Views
         mBinding.flightInfo.textViewOriginAirport.setText(info.originCode);
         mBinding.flightInfo.textViewFlightCode.setText(info.flightCode);
         mBinding.flightInfo.textViewDestinationAirport.setText(info.destCode);
@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
                 minutesLessHoursUntilBoarding);
 
         mBinding.textViewBoardingInCountdown.setText(hoursAndMinutesUntilBoarding);
-        // TODO (8) Use the boardingInfo attribute in mBinding below to get the appropiate text Views
-        mBinding.textViewTerminal.setText(info.departureTerminal);
-        mBinding.textViewGate.setText(info.departureGate);
-        mBinding.textViewSeat.setText(info.seatNumber);
+        // COMPLETED (8) Use the boardingInfo attribute in mBinding below to get the appropiate text Views
+        mBinding.bookingInfo.textViewTerminal.setText(info.departureTerminal);
+        mBinding.bookingInfo.textViewGate.setText(info.departureGate);
+        mBinding.bookingInfo.textViewSeat.setText(info.seatNumber);
     }
 }
 
